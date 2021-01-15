@@ -1,0 +1,5 @@
+#!/bin/bash
+# A simple plot script
+
+./plot_stats.gp
+./plot_dataset.gp

@@ -1,0 +1,18 @@
+# Data files
+*.txt
+*.dat
+
+# Image files
+*.png
+
+# Vim files
+*.swp
+
+# C extensions
+*.so
+
+# Executables
+*.out
+
+# Gnuplot
+*.swo
