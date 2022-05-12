@@ -109,6 +109,8 @@ void NeuralNetwork::run(std::vector<Point> data_train, std::vector<Point> data_v
         if (i % 50 == 0) {
             comp_prediction_landscape();
         }
+
+        std::cout << "Epoch number [" << i << "] done" << std::endl;    // debug
     }
 }
 
@@ -223,7 +225,15 @@ void NeuralNetwork::comp_stats(const std::vector<Point>& data) {
     }
     loss /= static_cast<double>(data.size());
     accuracy /= static_cast<double>(data.size());
-    std::cout << loss << " " << accuracy << std::endl;
+    // std::cout << loss << " " << accuracy << std::endl;
+    std::string file_name = "../results/stats.dat";
+    std::ofstream stats(file_name, std::ios::app);
+    if (stats.fail()) {
+        std::cerr << "Error\n";
+    } else {
+        stats << loss << " " << accuracy << std::endl;
+        stats.close();
+    }
 }
 
 std::vector<Point> NeuralNetwork::comp_grid(const unsigned int n_points_x, 
@@ -268,7 +278,7 @@ void NeuralNetwork::write_pred_to_file(const std::vector<double> pred,
                                        const unsigned int n_points_x,
                                        const unsigned int n_points_y) {
 
-    std::string file_name = "prediction_landscape.dat";
+    std::string file_name = "../results/prediction_landscape.dat";
     std::ofstream file;
     file.open(file_name);
 

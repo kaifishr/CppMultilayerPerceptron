@@ -1,5 +1,6 @@
 #!/bin/bash
 # A simple plot script
 
-./plot_stats.gp
-./plot_dataset.gp
+# You need to have gnuplot installed. For Ubuntu 20.04 LTS -> `sudo apt install gnuplot`
+gnuplot ./plot_stats.gp
+gnuplot ./plot_dataset.gp

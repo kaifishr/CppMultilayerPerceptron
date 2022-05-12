@@ -9,4 +9,4 @@ a.out: $(OBJ)
 
 .PHONY: clean
 clean:
-	rm -f $(OBJ) a.out
+	rm -f $(OBJ) a.out ../visualization/*.png ../results/*.dat

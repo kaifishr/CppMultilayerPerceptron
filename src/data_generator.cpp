@@ -12,7 +12,7 @@ DataGenerator::DataGenerator() : gen{std::random_device()()} { }
 
 void DataGenerator::write_data() const {
     std::ofstream results;
-    std::string file_name = "dataset.dat";
+    std::string file_name = "../results/dataset.dat";
     results.open(file_name);
     if (results.fail()) {
         std::cerr << "Error\n";

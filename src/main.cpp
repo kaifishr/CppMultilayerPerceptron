@@ -23,7 +23,7 @@ int main() {
     unsigned int n_hidden_3 = 64;
     unsigned int n_outputs = 2;
 
-    unsigned int n_epochs = 1000;
+    unsigned int n_epochs = 100;
     double learning_rate = 1e-4;
 
     NeuralNetwork neural_network(n_inputs, n_hidden_1, n_hidden_2, n_hidden_3, n_outputs, n_epochs, learning_rate);

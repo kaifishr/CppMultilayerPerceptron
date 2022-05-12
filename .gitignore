@@ -1,1 +1,4 @@
 .vscode/
+/src/*.o
+/visualization/*.png
+/results/*.dat
