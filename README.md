@@ -11,4 +11,4 @@ To plot visualize the images just go inside `visualization` directory and run:
 
 Remember to install `gnuplot` before running it.
 
-More information about this project can be found on my [blog](https://kaifabi.github.io).
+More information about this project can be found on my [blog](https://kaifishr.github.io/2021/01/14/micro-mlp.html).
